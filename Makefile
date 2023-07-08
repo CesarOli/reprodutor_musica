@@ -9,3 +9,6 @@ run:
 
 install:venv-reprodutor-musica requirements.txt
     $(PIP) install -r requirements.txt 
+
+venv-reprodutor-musica:
+    python3 -m venv $(VENV)
