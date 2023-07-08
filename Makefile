@@ -12,3 +12,7 @@ install:venv-reprodutor-musica requirements.txt
 
 venv-reprodutor-musica:
     python3 -m venv $(VENV)
+
+clean: 
+    rm -rf __pycache__
+	rm -rf $(VENV)
