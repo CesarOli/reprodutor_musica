@@ -6,4 +6,6 @@ PIP = $(VENV)/bin/pip
 
 run: 
     $(PYTHON) reprodutor-musica.py
-	
+
+install:venv-reprodutor-musica requirements.txt
+    $(PIP) install -r requirements.txt 
