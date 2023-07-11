@@ -15,3 +15,7 @@ while True:
     print("2. Pesquisar Música")
     print("3. Listar Todas as Músicas")
     print("8. Sair")
+
+    opcao = input("Digite o número da opção desejada: ")
+
+    
