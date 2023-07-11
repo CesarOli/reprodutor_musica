@@ -14,8 +14,16 @@ while True:
     print("1. Adicionar Música")
     print("2. Pesquisar Música")
     print("3. Listar Todas as Músicas")
-    print("8. Sair")
+    print("0. Sair")
 
     opcao = input("Digite o número da opção desejada: ")
 
+    if opcao == "1":
+        
     
+        print("Saindo do reprodutor de música...")
+        break
+    else:
+        print("Opção inválida. Digite novamente.")
+
+print("Fim do programa.")
