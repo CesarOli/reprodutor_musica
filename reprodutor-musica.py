@@ -19,6 +19,10 @@ while True:
     opcao = input("Digite o número da opção desejada: ")
 
     if opcao == "1":
+        print("Adicionar Música")
+
+        titulo = input("Digite o título da música: ")
+        artista = input("Digite o nome do artista: ")
         
     
         print("Saindo do reprodutor de música...")
