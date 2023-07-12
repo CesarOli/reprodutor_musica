@@ -36,7 +36,15 @@ while True:
             escolha = input("Voltar para o menu? (S/N): ")
             if escolha.lower() != "s":
                 break
+        elif opcao == 2:
+            print("Pesquisar Música")
 
+            titulo = input("Digite o título da música: ")
+        
+            if:
+            
+            else:
+        
         elif opcao == 0:
             break
         else:
