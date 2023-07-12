@@ -24,25 +24,25 @@ while True:
 
     opcao = input("Digite o número da opção desejada: ")
 
-    if opcao == "1":
-        print("Adicionar Música")
+    if opcao.isdigit():
+        opcao = int(opcao)
 
-        titulo = input("Digite o título da música: ")
-        artista = input("Digite o nome do artista: ")
+        if opcao == 1:
+            print("Adicionar Música")
 
-        escolha = input("Voltar para o menu? (S/N): ")
-        if escolha.lower() != "s":
+            titulo = input("Digite o título da música: ")
+            artista = input("Digite o nome do artista: ")
+
+            escolha = input("Voltar para o menu? (S/N): ")
+            if escolha.lower() != "s":
+                break
+
+        elif opcao == 0:
             break
-
-    elif opcao == "0":
-        break
-    else:
-        print("Opção inválida. Digite novamente.")
+        else:
+            print("Opção inválida. Digite novamente.")
 print("Encerrando o programa...")
 sleep(1)
 print("Obrigado!!")
 sleep(1.5)
 print("Fim do programa.")
-
-
-        
