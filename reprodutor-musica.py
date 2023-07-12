@@ -23,11 +23,14 @@ while True:
 
         titulo = input("Digite o título da música: ")
         artista = input("Digite o nome do artista: ")
-        
-    
-        print("Saindo do reprodutor de música...")
-        break
+
+        escolha = input("Voltar para o menu? (S/N): ")
+        if escolha.lower() != "s":
+            break
     else:
         print("Opção inválida. Digite novamente.")
 
 print("Fim do programa.")
+
+
+        
