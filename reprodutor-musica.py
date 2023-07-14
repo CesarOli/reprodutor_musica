@@ -1,5 +1,4 @@
 import mysql.connector
-import requests
 from time import sleep
 
 config = {
@@ -36,21 +35,39 @@ while True:
             escolha = input("Voltar para o menu? (S/N): ")
             if escolha.lower() != "s":
                 break
+
         elif opcao == 2:
             print("Pesquisar Música")
 
             titulo = input("Digite o título da música: ")
-        
-            if:
-            
+
+            resultado = ""
+
+            if resultado:
+                for musica in resultado:
+
+
             else:
-        
+                print("Música não encontrada.")
+
+        elif opcao == 3:
+            print("Listar Todas as Músicas")
+
+            if resultado:
+                for musica in resultado:
+
+            else:
+                print("Nenhuma música cadastrada.")
+
         elif opcao == 0:
             break
-        else:
-            print("Opção inválida. Digite novamente.")
+
+    else:
+        print("Opção inválida. Digite novamente.")
+
 print("Encerrando o programa...")
 sleep(1)
 print("Obrigado!!")
 sleep(1.5)
 print("Fim do programa.")
+
