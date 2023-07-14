@@ -5,14 +5,17 @@ PIP = $(VENV)/bin/pip
 .PHONY: run install clean
 
 run: 
-    $(PYTHON) reprodutor-musica.py
+	$(PYTHON) reprodutor-musica.py
 
 install: venv-reprodutor-musica requirements.txt
-    $(PIP) install -r requirements.txt 
+	$(PIP) install -r requirements.txt 
 
 venv-reprodutor-musica:
-    python3 -m venv $(VENV)
+	python3 -m venv $(VENV)
 
 clean: 
-    rm -rf __pycache__
-    rm -rf $(VENV)
+	rm -rf __pycache__
+	rm -rf $(VENV)
+
+capoeira:
+	@echo capoeira
