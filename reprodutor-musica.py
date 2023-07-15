@@ -45,19 +45,17 @@ while True:
 
             if resultado:
                 for musica in resultado:
-
-
+                     if resultado:
+                        for musica in resultado:
+                            print("Título:", musica[1])
+                            print("Artista:", musica[2])
             else:
-                print("Música não encontrada.")
+                print("Nenhuma música cadastrada.")
 
         elif opcao == 3:
             print("Listar Todas as Músicas")
 
-            if resultado:
-                for musica in resultado:
-
-            else:
-                print("Nenhuma música cadastrada.")
+           
 
         elif opcao == 0:
             break
