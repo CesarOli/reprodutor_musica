@@ -56,10 +56,11 @@ while True:
             print("Listar Todas as Músicas")
 
             if:
+                for  in :
             
 
             else:
-                
+
 
         elif opcao == 0:
             break
