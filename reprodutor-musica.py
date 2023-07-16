@@ -7,6 +7,8 @@ config = {
     'password': 'SENHA_DESEJADA',
     'database': 'reprodutor-musica'
 }
+conexao = mysql.connector.connect(**config)
+cursor = conexao.cursor()
 
 while True:
     print("========== Reprodutor de Música ==========")
