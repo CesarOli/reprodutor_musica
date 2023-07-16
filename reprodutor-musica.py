@@ -10,6 +10,15 @@ config = {
 conexao = mysql.connector.connect(**config)
 cursor = conexao.cursor()
 
+cursor.execute("SHOW TABLES")
+tabelas = cursor.fetchall()
+
+tabela_musica_existe = False
+for tabela in tabelas:
+    if tabela[0] == 'musicas':
+        tabela_musica_existe = True
+        break
+
 while True:
     print("========== Reprodutor de Música ==========")
     sleep(0.8)
