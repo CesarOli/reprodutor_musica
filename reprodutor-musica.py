@@ -49,6 +49,13 @@ while True:
             titulo = input("Digite o título da música: ")
             artista = input("Digite o nome do artista: ")
 
+            sql = "INSERT INTO Musicas (titulo, artista) VALUES (%s, %s)"
+            valore = (titulo, artista)
+            cursor.execute(sql, valores)
+            conexao.commit()
+
+            print("Música adicionada com Sucesso!!")
+
             escolha = input("Voltar para o menu? (S/N): ")
             if escolha.lower() != "s":
                 break
