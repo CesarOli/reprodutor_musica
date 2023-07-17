@@ -65,14 +65,17 @@ while True:
 
             titulo = input("Digite o título da música: ")
 
-            resultado = ""
+            sql = "SELECT * FROM Musicas WHERE titulo = %s"
+            valores = (titulo,)
+            cursor.execute(sql, valores)
+            resultado = cursor.fetchall()
 
             if resultado:
                 for musica in resultado:
                      if resultado:
                         for musica in resultado:
                             print("Título:", musica[1])
-                            print("Artista:", musica[2])
+                            print("Artista:", artista[2])
             else:
                 print("Nenhuma música cadastrada.")
 
