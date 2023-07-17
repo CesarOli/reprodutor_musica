@@ -50,7 +50,7 @@ while True:
             artista = input("Digite o nome do artista: ")
 
             sql = "INSERT INTO Musicas (titulo, artista) VALUES (%s, %s)"
-            valore = (titulo, artista)
+            valores = (titulo, artista)
             cursor.execute(sql, valores)
             conexao.commit()
 
