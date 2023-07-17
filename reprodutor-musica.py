@@ -19,6 +19,10 @@ for tabela in tabelas:
         tabela_musica_existe = True
         break
 
+if not tabela_musica_existe:
+    cursor.execute("CREATE TABLE Musicas (id INT AUTO_INCREMENT PRIMARY KEY, titulo VARCHAR(255), artista VARCHAR(255))")
+    print("Tabela 'Musicas' criada com sucesso!")
+
 while True:
     print("========== Reprodutor de Música ==========")
     sleep(0.8)
@@ -84,4 +88,3 @@ sleep(1)
 print("Obrigado!!")
 sleep(1.5)
 print("Fim do programa.")
-
