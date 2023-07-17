@@ -20,8 +20,10 @@ for tabela in tabelas:
         break
 
 if not tabela_musica_existe:
-    cursor.execute("CREATE TABLE Musicas (id INT AUTO_INCREMENT PRIMARY KEY, titulo VARCHAR(255), artista VARCHAR(255))")
+    cursor.execute("CREATE TABLE IF NOT EXISTS Musicas (id INT AUTO_INCREMENT PRIMARY KEY, titulo VARCHAR(255), artista VARCHAR(255))")
     print("Tabela 'Musicas' criada com sucesso!")
+
+
 
 while True:
     print("========== Reprodutor de Música ==========")
@@ -69,6 +71,9 @@ while True:
 
         elif opcao == 3:
             print("Listar Todas as Músicas")
+
+            cursor.execute("SELECT * FROM Musicas")
+            resultado = cursor.fetchall()
 
             if resultado:
                 for musica in resultado:
