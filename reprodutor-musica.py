@@ -75,7 +75,7 @@ while True:
                      if resultado:
                         for musica in resultado:
                             print("Título:", musica[1])
-                            print("Artista:", artista[2])
+                            print("Artista:", musica[2])
             else:
                 print("Nenhuma música cadastrada.")
 
