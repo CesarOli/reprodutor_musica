@@ -25,26 +25,26 @@ if not tabela_musica_existe:
 print("=" * 50)
 print("Bem Vindo ao seu 'Reprodutor de Música'!")
 print("=" * 50)
-
-print("Aguarde, abrindo menu de opções")
-print("1. Adicionar Música")
-print("2. Pesquisar Música")
-print("3. Listar Todas as Músicas")
-print("0. Sair")
-print("=" * 50)
+print()
 
 while True:
     sleep(0.8)
-    print("Aguarde, abrindo menu de opções")
+    print("Aguarde, abrindo menu de opções...")
+    print()
+    print("=" * 50)
+    print()
     sleep(1.5)
     print("1. Adicionar Música")
+    print()
     sleep(0.3)
     print("2. Pesquisar Música")
+    print()
     sleep(0.3)
     print("3. Listar Todas as Músicas")
+    print()
     sleep(0.3)
     print("0. Sair")
-
+    print()
     opcao = input("Digite o número da opção desejada: ")
 
     if opcao.isdigit():
