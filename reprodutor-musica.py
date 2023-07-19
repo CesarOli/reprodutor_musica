@@ -21,12 +21,19 @@ for tabela in tabelas:
 
 if not tabela_musica_existe:
     cursor.execute("CREATE TABLE IF NOT EXISTS Musicas (id INT AUTO_INCREMENT PRIMARY KEY, titulo VARCHAR(255), artista VARCHAR(255))")
-    print("Tabela 'Musicas' criada com sucesso!")
 
+print("=" * 50)
+print("Bem Vindo ao seu 'Reprodutor de Música'!")
+print("=" * 50)
 
+print("Aguarde, abrindo menu de opções")
+print("1. Adicionar Música")
+print("2. Pesquisar Música")
+print("3. Listar Todas as Músicas")
+print("0. Sair")
+print("=" * 50)
 
 while True:
-    print("========== Reprodutor de Música ==========")
     sleep(0.8)
     print("Aguarde, abrindo menu de opções")
     sleep(1.5)
@@ -88,6 +95,7 @@ while True:
             if resultado:
                 for musica in resultado:
                     print("Título:", musica[1])
+                    sleep(0.5)
                     print("Artista:", musica[2])
             else:
                 print("Nenhuma música cadastrada.")
